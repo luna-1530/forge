@@ -1,0 +1,268 @@
+/* ====================================================== */
+/* GENERAL */
+/* ====================================================== */
+
+body {
+  background-color: honeydew;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  margin: 30px;
+  padding: 20px;
+}
+
+/* ====================================================== */
+/* SIMPLE SELECTORS */
+/* ====================================================== */
+
+/* 1. ELEMENT SELECTOR */
+
+p {
+  color: rgb(3, 86, 86);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* 2. CLASS SELECTOR */
+
+.class-example {
+  font-weight: bolder;
+}
+
+/* 3. ID SELECTOR */
+
+#id-example {
+  font-size: large;
+  font-weight: 900;
+}
+
+/* 4. UNIVERSAL SELECTOR */
+
+/*
+* {
+  margin: 10px;
+  padding: 5px;
+}
+*/
+
+/* ====================================================== */
+/* COMBINATION SELECTORS */
+/* ====================================================== */
+
+/* 1. DESCENDANT SELECTOR */
+
+/* Selects ALL p elements inside .descendant */
+
+.descendant p {
+  color: chocolate;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+/* 2. CHILD SELECTOR */
+
+/* Selects ONLY direct p children */
+
+.child > p {
+  color: rgb(88, 40, 6);
+  font-weight: 800;
+}
+
+/* 3. ADJACENT SIBLING SELECTOR */
+
+/* Selects the p immediately after h2 */
+
+h2 + .adjacent-target {
+  color: rgb(147, 136, 39);
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* 4. GENERAL SIBLING SELECTOR */
+
+/* Selects ALL p siblings after h2 */
+
+h2 ~ .general-target,
+h2 ~ .general-target ~ p {
+  color: burlywood;
+  font-weight: 800;
+}
+
+/* ====================================================== */
+/* PSEUDO-CLASS SELECTORS */
+/* ====================================================== */
+
+/* 1. HOVER */
+
+.hover-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 2. ACTIVE */
+
+.active-button:active {
+  transform: scale(0.9);
+}
+
+/* 3. FOCUS */
+
+.focus-input:focus {
+  border: 3px solid blue;
+  outline: none;
+}
+
+/* 4. FIRST CHILD */
+
+.children p:first-child {
+  color: red;
+}
+
+/* 5. LAST CHILD */
+
+.last-children p:last-child {
+  color: green;
+}
+
+/* 6. NTH CHILD */
+
+/* Selects the second item */
+
+.nth-list li:nth-child(2) {
+  color: red;
+}
+
+/* Selects even items */
+
+.nth-list li:nth-child(even) {
+  background-color: lightgray;
+}
+
+/* 7. NOT */
+
+/* Selects every p except .special */
+
+.not-example p:not(.special) {
+  color: gray;
+}
+
+/* 8. CHECKED */
+
+.check:checked {
+  accent-color: green;
+}
+
+/* 9. DISABLED */
+
+button:disabled {
+  opacity: 0.5;
+}
+
+/* ====================================================== */
+/* PSEUDO-ELEMENT SELECTORS */
+/* ====================================================== */
+
+/* 1. BEFORE */
+
+.before-example::before {
+  content: "🔥 ";
+}
+
+/* 2. AFTER */
+
+.after-example::after {
+  content: " ✓";
+}
+
+/* 3. FIRST LETTER */
+
+.first-letter-example::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* 4. FIRST LINE */
+
+.first-line-example::first-line {
+  font-weight: bold;
+}
+
+/* 5. SELECTION */
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+/* 6. PLACEHOLDER */
+
+.placeholder-example::placeholder {
+  color: gray;
+}
+
+/* 7. MARKER */
+
+.marker-example li::marker {
+  color: red;
+}
+
+/* ====================================================== */
+/* ATTRIBUTE SELECTORS */
+/* ====================================================== */
+
+/* 1. [attribute] */
+
+/* Selects elements that HAVE the type attribute */
+
+input[type] {
+  border: 2px solid blue;
+}
+
+/* 2. [attribute="value"] */
+
+/* Selects inputs whose type is exactly email */
+
+input[type="email"] {
+  border: 3px solid green;
+}
+
+/* 3. [attribute~="value"] */
+
+/* Contains "featured" as a whole word */
+
+div[class~="featured"] {
+  border: 3px solid gold;
+}
+
+/* 4. [attribute|="value"] */
+
+/* Matches en and en-US */
+
+p[lang|="en"] {
+  font-weight: bold;
+}
+
+/* 5. [attribute^="value"] */
+
+/* href STARTS with https */
+
+a[href^="https"] {
+  text-decoration: none;
+}
+
+/* 6. [attribute$="value"] */
+
+/* href ENDS with .pdf */
+
+a[href$=".pdf"] {
+  color: red;
+}
+
+/* 7. [attribute*="value"] */
+
+/* href CONTAINS github */
+
+a[href*="github"] {
+  font-weight: bold;
+}

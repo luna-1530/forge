@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+
+    <link rel="stylesheet" href="/frontend/css/selectors.css" />
+  </head>
+
+  <body>
+    <!-- ====================================================== -->
+    <!-- SIMPLE SELECTORS -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h1>SIMPLE SELECTORS</h1>
+
+      <p>
+        Simple selectors select elements using their element name, class, ID, or
+        universal selector.
+      </p>
+
+      <!-- ELEMENT SELECTOR -->
+      <div>
+        <h2>ELEMENT SELECTOR</h2>
+        <p>Selects HTML elements by their tag name.</p>
+      </div>
+
+      <!-- CLASS SELECTOR -->
+      <div class="class-example">
+        <h2>CLASS SELECTOR</h2>
+        <p>Selects elements with a particular class.</p>
+      </div>
+
+      <!-- ID SELECTOR -->
+      <div id="id-example">
+        <h2>ID SELECTOR</h2>
+        <p>Selects an element with a particular ID.</p>
+      </div>
+
+      <!-- UNIVERSAL SELECTOR -->
+      <div>
+        <h2>UNIVERSAL SELECTOR</h2>
+        <p>Selects all elements on the page.</p>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- COMBINATION SELECTORS -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h1>COMBINATION SELECTORS</h1>
+
+      <!-- DESCENDANT -->
+      <div class="descendant">
+        <h2>DESCENDANT SELECTOR</h2>
+
+        <p>This paragraph is inside .descendant.</p>
+
+        <div>
+          <p>This paragraph is also inside .descendant.</p>
+        </div>
+      </div>
+
+      <!-- CHILD -->
+      <div class="child">
+        <h2>CHILD SELECTOR</h2>
+
+        <p>This is a direct child of .child.</p>
+
+        <div>
+          <p>This is NOT a direct child.</p>
+        </div>
+      </div>
+
+      <!-- ADJACENT SIBLING -->
+      <h2>ADJACENT SIBLING SELECTOR</h2>
+
+      <p class="adjacent-target">
+        This paragraph comes immediately after the h2.
+      </p>
+
+      <p>This paragraph does NOT come immediately after the h2.</p>
+
+      <!-- GENERAL SIBLING -->
+      <h2>GENERAL SIBLING SELECTOR</h2>
+
+      <p class="general-target">First paragraph after h2.</p>
+
+      <p>Second paragraph after h2.</p>
+
+      <p>Third paragraph after h2.</p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- PSEUDO-CLASS SELECTORS -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h1>PSEUDO-CLASS SELECTORS</h1>
+
+      <!-- HOVER -->
+      <button class="hover-button">Hover Me</button>
+
+      <!-- ACTIVE -->
+      <button class="active-button">Click Me</button>
+
+      <!-- FOCUS -->
+      <input class="focus-input" type="text" placeholder="Click inside me" />
+
+      <!-- FIRST CHILD -->
+      <div class="children">
+        <p>First child</p>
+        <p>Second child</p>
+        <p>Third child</p>
+      </div>
+
+      <!-- LAST CHILD -->
+      <div class="last-children">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Last paragraph</p>
+      </div>
+
+      <!-- NTH CHILD -->
+      <ul class="nth-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+
+      <!-- NOT -->
+      <div class="not-example">
+        <p>Normal paragraph</p>
+        <p class="special">Special paragraph</p>
+        <p>Another normal paragraph</p>
+      </div>
+
+      <!-- CHECKED -->
+      <label>
+        <input type="checkbox" class="check" />
+        Check me
+      </label>
+
+      <!-- DISABLED -->
+      <br /><br />
+
+      <button disabled>Disabled Button</button>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- PSEUDO-ELEMENT SELECTORS -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h1>PSEUDO-ELEMENT SELECTORS</h1>
+
+      <!-- BEFORE -->
+      <h2 class="before-example">Before Example</h2>
+
+      <!-- AFTER -->
+      <h2 class="after-example">After Example</h2>
+
+      <!-- FIRST LETTER -->
+      <p class="first-letter-example">
+        This paragraph demonstrates the first-letter pseudo-element.
+      </p>
+
+      <!-- FIRST LINE -->
+      <p class="first-line-example">
+        This paragraph demonstrates the first-line pseudo-element. Resize the
+        browser to see how the first line changes.
+      </p>
+
+      <!-- SELECTION -->
+      <p>Try highlighting this text with your mouse.</p>
+
+      <!-- PLACEHOLDER -->
+      <input
+        class="placeholder-example"
+        type="text"
+        placeholder="My placeholder"
+      />
+
+      <!-- MARKER -->
+      <ul class="marker-example">
+        <li>Python</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- ATTRIBUTE SELECTORS -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h1>ATTRIBUTE SELECTORS</h1>
+
+      <!-- [attribute] -->
+      <input type="text" placeholder="Text input" />
+
+      <!-- [attribute="value"] -->
+      <input type="email" placeholder="Email input" />
+
+      <!-- [attribute^="value"] -->
+      <a href="https://google.com"> Google </a>
+
+      <!-- [attribute$="value"] -->
+      <a href="notes.pdf"> PDF Notes </a>
+
+      <!-- [attribute*="value"] -->
+      <a href="https://github.com"> GitHub </a>
+
+      <!-- [attribute~="value"] -->
+      <div class="card featured">Featured Card</div>
+
+      <!-- [attribute|="value"] -->
+      <p lang="en">English paragraph</p>
+
+      <p lang="en-US">American English paragraph</p>
+    </section>
+  </body>
+</html>
