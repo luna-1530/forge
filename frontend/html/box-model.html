@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Box Model</title>
+
+    <link rel="stylesheet" href="/frontend/css/box-model.css" />
+  </head>
+
+  <body>
+    <h1>CSS BOX MODEL</h1>
+
+    <p>
+      Every HTML element is treated as a box made up of content, padding,
+      border, and margin.
+    </p>
+
+    <!-- ====================================================== -->
+    <!-- 1. CONTENT -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>1. CONTENT</h2>
+
+      <div class="content-box">Content</div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 2. PADDING -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>2. PADDING</h2>
+
+      <div class="padding-box">Content with padding</div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 3. BORDER -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>3. BORDER</h2>
+
+      <div class="border-box">Content with border</div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 4. MARGIN -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>4. MARGIN</h2>
+
+      <div class="margin-box">Content with margin</div>
+
+      <div class="second-box">Another box</div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 5. CONTENT-BOX -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>5. CONTENT-BOX</h2>
+
+      <div class="content-sizing">width: 300px</div>
+
+      <p>
+        The declared width is the content width. Padding and border are added to
+        it.
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 6. BORDER-BOX -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>6. BORDER-BOX</h2>
+
+      <div class="border-sizing">width: 300px</div>
+
+      <p>The declared width includes the content, padding, and border.</p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 7. CONTENT-BOX CALCULATION -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>7. CONTENT-BOX CALCULATION</h2>
+
+      <div class="calculation-content">300px content</div>
+
+      <p>
+        Content = 300px<br />
+        Padding = 20px + 20px<br />
+        Border = 5px + 5px<br />
+        Total box width = 350px
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 8. BORDER-BOX CALCULATION -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>8. BORDER-BOX CALCULATION</h2>
+
+      <div class="calculation-border">300px total box</div>
+
+      <p>
+        Total box width = 300px<br />
+        Padding = 20px + 20px<br />
+        Border = 5px + 5px<br />
+        Content width = 250px
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 9. NO BORDER -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>9. NO BORDER</h2>
+
+      <div class="no-border">300px content + 20px padding</div>
+
+      <p>
+        Content = 300px<br />
+        Padding = 20px + 20px<br />
+        Border = 0px<br />
+        Total width = 340px
+      </p>
+    </section>
+  </body>
+</html>
