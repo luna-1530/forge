@@ -1,0 +1,137 @@
+/* =====================================================
+   CSS COLORS PRACTICE
+   ===================================================== */
+
+/* GENERAL STYLING */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+/* =====================================================
+   1. COLOR NAMES
+   ===================================================== */
+
+.color-name {
+  color: red;
+}
+
+.background-name {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+/* =====================================================
+   2. HEX COLORS
+   ===================================================== */
+
+.hex-red {
+  color: #ff0000;
+}
+
+.hex-green {
+  color: #00ff00;
+}
+
+.hex-blue {
+  color: #0000ff;
+}
+
+.hex-purple {
+  color: #800080;
+}
+
+/* =====================================================
+   3. RGB COLORS
+   ===================================================== */
+
+.rgb-red {
+  color: rgb(255, 0, 0);
+}
+
+.rgb-green {
+  color: rgb(0, 255, 0);
+}
+
+.rgb-blue {
+  color: rgb(0, 0, 255);
+}
+
+/* =====================================================
+   4. RGBA COLORS
+   ===================================================== */
+
+.rgba-full {
+  background-color: rgba(255, 0, 0, 1);
+  padding: 20px;
+}
+
+.rgba-half {
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.rgba-low {
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* =====================================================
+   5. HSL COLORS
+   ===================================================== */
+
+.hsl-red {
+  color: hsl(0, 100%, 50%);
+}
+
+.hsl-green {
+  color: hsl(120, 100%, 50%);
+}
+
+.hsl-blue {
+  color: hsl(240, 100%, 50%);
+}
+
+/* =====================================================
+   6. HSLA COLORS
+   ===================================================== */
+
+.hsla-color {
+  background-color: hsla(240, 100%, 50%, 0.5);
+  color: white;
+  padding: 20px;
+}
+
+/* =====================================================
+   🎯 CHALLENGE
+   ===================================================== */
+
+.challenge {
+  padding: 30px;
+
+  /* Change these yourself! */
+
+  color: rgb(158, 17, 17);
+
+  background-color: rgb(15, 155, 50);
+
+  border: 3px solid rgb(54, 16, 142);
+}
