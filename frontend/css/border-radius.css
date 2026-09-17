@@ -1,0 +1,136 @@
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+div {
+  padding: 30px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* =====================================================
+   1. BASIC BORDER RADIUS
+   ===================================================== */
+
+.radius-small {
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.radius-large {
+  border: 4px solid black;
+  border-radius: 30px;
+}
+
+/* =====================================================
+   2. CIRCLE
+   ===================================================== */
+
+.circle {
+  width: 120px;
+  height: 120px;
+
+  border: 4px solid purple;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================================================
+   3. ELLIPSE
+   ===================================================== */
+
+.ellipse {
+  width: 250px;
+  height: 120px;
+
+  border: 4px solid blue;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================================================
+   4. INDIVIDUAL CORNERS
+   ===================================================== */
+
+.individual {
+  border: 4px solid black;
+
+  border-top-left-radius: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 10px;
+}
+
+/* =====================================================
+   5. FOUR VALUES
+   ===================================================== */
+
+.four-values {
+  border: 4px solid green;
+
+  /*
+       top-left
+       top-right
+       bottom-right
+       bottom-left
+    */
+
+  border-radius: 10px 20px 30px 40px;
+}
+
+/* =====================================================
+   6. TWO VALUES
+   ===================================================== */
+
+.two-values {
+  border: 4px solid orange;
+
+  /*
+       top-left + bottom-right = 20px
+       top-right + bottom-left = 50px
+    */
+
+  border-radius: 20px 50px;
+}
+
+/* =====================================================
+   🎯 CHALLENGE
+   ===================================================== */
+
+.challenge {
+  width: 200px;
+  height: 120px;
+
+  border: 5px solid black;
+
+  /* Change this! */
+
+  border-radius: 50px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
