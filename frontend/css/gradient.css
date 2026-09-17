@@ -1,0 +1,161 @@
+/* =====================================================
+   GENERAL STYLING
+   ===================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+/* =====================================================
+   1. LINEAR GRADIENT
+   ===================================================== */
+
+.linear {
+  padding: 50px;
+  color: white;
+  text-align: center;
+
+  background-image: linear-gradient(red, blue);
+}
+
+/* =====================================================
+   2. GRADIENT DIRECTIONS
+   ===================================================== */
+
+.right {
+  padding: 40px;
+  margin-bottom: 15px;
+  color: white;
+
+  background-image: linear-gradient(to right, red, blue);
+}
+
+.left {
+  padding: 40px;
+  margin-bottom: 15px;
+  color: white;
+
+  background-image: linear-gradient(to left, red, blue);
+}
+
+.bottom {
+  padding: 40px;
+  margin-bottom: 15px;
+  color: white;
+
+  background-image: linear-gradient(to bottom, red, blue);
+}
+
+.diagonal {
+  padding: 40px;
+  color: white;
+
+  background-image: linear-gradient(to bottom right, red, blue);
+}
+
+/* =====================================================
+   3. MULTIPLE COLORS
+   ===================================================== */
+
+.multiple {
+  padding: 50px;
+  color: white;
+  text-align: center;
+
+  background-image: linear-gradient(to right, red, yellow, green, blue);
+}
+
+/* =====================================================
+   4. COLOR STOPS
+   ===================================================== */
+
+.color-stops {
+  padding: 50px;
+  color: white;
+  text-align: center;
+
+  background-image: linear-gradient(to right, red 0%, yellow 50%, blue 100%);
+}
+
+/* =====================================================
+   5. RADIAL GRADIENT
+   ===================================================== */
+
+.radial {
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background-image: radial-gradient(red, blue);
+}
+
+/* =====================================================
+   6. RADIAL CIRCLE
+   ===================================================== */
+
+.circle {
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background-image: radial-gradient(circle, red, yellow, blue);
+}
+
+/* =====================================================
+   7. CONIC GRADIENT
+   ===================================================== */
+
+.conic {
+  height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background-image: conic-gradient(red, yellow, green, blue, red);
+}
+
+/* =====================================================
+   🎯 8. YOUR CHALLENGE
+   ===================================================== */
+
+.challenge {
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  /* Change this gradient yourself! */
+
+  background-image: conic-gradient(indigo, purple, red, violet);
+}
