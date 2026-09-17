@@ -1,0 +1,140 @@
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+body {
+  background-color: #f5f5f5;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* =====================================================
+   1. FONT FAMILY
+   ===================================================== */
+
+.arial {
+  font-family: Arial, sans-serif;
+}
+
+.georgia {
+  font-family: Georgia, serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+/* =====================================================
+   2. GENERIC FONT FAMILIES
+   ===================================================== */
+
+.serif {
+  font-family: serif;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+/* =====================================================
+   3. FONT NAMES WITH SPACES
+   ===================================================== */
+
+.times {
+  font-family: "Times New Roman", serif;
+}
+
+.courier {
+  font-family: "Courier New", monospace;
+}
+
+/* =====================================================
+   4. FONT WEIGHT
+   ===================================================== */
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+/* =====================================================
+   5. FONT STYLE
+   ===================================================== */
+
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+/* =====================================================
+   6. WEB FONTS
+   ===================================================== */
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* =====================================================
+   7. FONT SHORTHAND
+   ===================================================== */
+
+.shorthand {
+  font:
+    italic bold 24px Arial,
+    sans-serif;
+}
+
+/* =====================================================
+   🎯 CHALLENGE
+   ===================================================== */
+
+.challenge {
+  font-family: "Georgia", serif;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+
+  /* Try changing the font! */
+}
