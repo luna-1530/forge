@@ -1,0 +1,252 @@
+/* ========================================
+   GENERAL STYLING
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #222;
+  color: white;
+}
+
+section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* ========================================
+   1. PX
+======================================== */
+
+.px-box {
+  width: 300px;
+  height: 100px;
+
+  background-color: lightblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid blue;
+}
+
+.px-text {
+  font-size: 20px;
+}
+
+/* ========================================
+   2. %
+======================================== */
+
+.percentage-container {
+  width: 100%;
+  height: 120px;
+
+  background-color: #ddd;
+}
+
+.percentage-box {
+  width: 50%;
+  height: 100%;
+
+  background-color: lightgreen;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================
+   3. REM
+======================================== */
+
+.rem-box {
+  padding: 1.5rem;
+
+  background-color: lavender;
+}
+
+.rem-box h3 {
+  font-size: 2rem;
+}
+
+.rem-box p {
+  font-size: 1rem;
+}
+
+/* ========================================
+   4. EM
+======================================== */
+
+.em-parent {
+  font-size: 20px;
+
+  padding: 20px;
+
+  background-color: #eee;
+}
+
+.em-child {
+  font-size: 2em;
+
+  margin-top: 20px;
+  padding: 10px;
+
+  background-color: lightcoral;
+}
+
+/* ========================================
+   5. VW
+======================================== */
+
+.vw-box {
+  width: 50vw;
+  height: 100px;
+
+  background-color: peachpuff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================
+   6. VH
+======================================== */
+
+.vh-box {
+  width: 100%;
+
+  height: 30vh;
+
+  background-color: lightpink;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+}
+
+/* ========================================
+   7. CLAMP()
+======================================== */
+
+.clamp-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+
+  text-align: center;
+
+  margin: 20px 0;
+}
+
+.clamp-text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+
+  text-align: center;
+}
+
+/* ========================================
+   RESPONSIVE EXAMPLE
+======================================== */
+
+.responsive-section {
+  text-align: center;
+}
+
+.responsive-card {
+  width: 90%;
+  max-width: 600px;
+
+  margin: auto;
+  padding: 2rem;
+
+  background-color: #e8f0ff;
+
+  border-radius: 20px;
+}
+
+.responsive-card h3 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.responsive-card p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.responsive-card button {
+  padding: 0.8rem 1.5rem;
+
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #222;
+  color: white;
+}
+
+/* ========================================
+   YOUR CHALLENGE
+======================================== */
+
+.challenge-box {
+  width: 90%;
+
+  max-width: 500px;
+
+  min-height: 150px;
+
+  margin: auto;
+  padding: 3rem;
+
+  background: linear-gradient(200deg, #17607d, #6f53b7);
+
+  border-radius: 30px;
+
+  text-align: center;
+}
+
+.challenge-box h3 {
+  font-size: clamp(1rem, 3vw, 5rem);
+}
+
+.challenge-box p {
+  font-size: clamp(0.3rem, 1vw, 2rem);
+}
+
+.challenge-box button {
+  padding: 2em 3em;
+
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+}

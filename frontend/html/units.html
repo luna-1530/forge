@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Units</title>
+
+    <link rel="stylesheet" href="/frontend/css/units.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Units Playground</h1>
+      <p>Resize your browser to see the responsive units change.</p>
+    </header>
+
+    <!-- PX -->
+    <section>
+      <h2>1. PX - Pixels</h2>
+
+      <div class="px-box">This box is 300px wide</div>
+
+      <p class="px-text">This text has a fixed font size of 20px.</p>
+    </section>
+
+    <!-- PERCENTAGE -->
+    <section>
+      <h2>2. % - Percentage</h2>
+
+      <div class="percentage-container">
+        <div class="percentage-box">50% width</div>
+      </div>
+
+      <p>The inner box takes 50% of its parent's width.</p>
+    </section>
+
+    <!-- REM -->
+    <section>
+      <h2>3. rem - Root EM</h2>
+
+      <div class="rem-box">
+        <h3>2rem heading</h3>
+        <p>1rem paragraph</p>
+      </div>
+    </section>
+
+    <!-- EM -->
+    <section>
+      <h2>4. em - Relative to Font Size</h2>
+
+      <div class="em-parent">
+        Parent font-size: 20px
+
+        <div class="em-child">Child font-size: 2em = 40px</div>
+      </div>
+    </section>
+
+    <!-- VW -->
+    <section>
+      <h2>5. vw - Viewport Width</h2>
+
+      <div class="vw-box">50vw width</div>
+
+      <p>1vw = 1% of the browser's width.</p>
+    </section>
+
+    <!-- VH -->
+    <section>
+      <h2>6. vh - Viewport Height</h2>
+
+      <div class="vh-box">30vh height</div>
+
+      <p>30vh = 30% of the viewport height.</p>
+    </section>
+
+    <!-- CLAMP -->
+    <section>
+      <h2>7. clamp() - Responsive Size</h2>
+
+      <h3 class="clamp-heading">Resize the browser!</h3>
+
+      <p class="clamp-text">
+        This text uses clamp() and changes size smoothly.
+      </p>
+    </section>
+
+    <!-- COMBINATION -->
+    <section class="responsive-section">
+      <h2>🔥 Responsive Example</h2>
+
+      <div class="responsive-card">
+        <h3>Responsive Card</h3>
+
+        <p>This card combines %, rem, vw and clamp().</p>
+
+        <button>Learn CSS</button>
+      </div>
+    </section>
+
+    <!-- CHALLENGE -->
+    <section>
+      <h2>💪 Your Challenge</h2>
+
+      <div class="challenge-box">
+        <h3>Build Me</h3>
+
+        <p>Make this box responsive using CSS units.</p>
+
+        <button>Challenge</button>
+      </div>
+    </section>
+  </body>
+</html>
