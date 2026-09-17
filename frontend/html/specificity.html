@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Specificity</title>
+
+    <link rel="stylesheet" href="/frontend/css/specificity.css" />
+  </head>
+
+  <body>
+    <h1>CSS SPECIFICITY</h1>
+
+    <p>
+      Specificity determines which CSS rule wins when multiple rules target the
+      same element.
+    </p>
+
+    <!-- ====================================================== -->
+    <!-- ELEMENT VS CLASS -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>1. ELEMENT VS CLASS</h2>
+
+      <p class="class-example">
+        The class selector wins over the element selector.
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- CLASS VS ID -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>2. CLASS VS ID</h2>
+
+      <p id="id-example" class="class-example">
+        The ID selector wins over the class selector.
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- TWO CLASSES -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>3. TWO CLASSES</h2>
+
+      <p class="text special">
+        Both selectors have the same level. The rule that comes later wins.
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- MORE SPECIFIC CLASS COMBINATION -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>4. MORE SPECIFIC SELECTOR</h2>
+
+      <div class="card">
+        <p class="text">.card .text is more specific than .text</p>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- INLINE STYLE -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>5. INLINE STYLE</h2>
+
+      <p id="inline-example" style="color: orange">
+        Inline style wins over normal CSS rules.
+      </p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- !IMPORTANT -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>6. !IMPORTANT</h2>
+
+      <p id="important-example">!important overrides normal CSS rules.</p>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- FINAL CHALLENGE -->
+    <!-- ====================================================== -->
+
+    <section>
+      <h2>7. FINAL SPECIFICITY CHALLENGE</h2>
+
+      <div id="main" class="container">
+        <p class="text special">Which CSS rule will win?</p>
+        <p>my ans: #main.text wins</p>
+      </div>
+    </section>
+  </body>
+</html>

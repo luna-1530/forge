@@ -1,0 +1,187 @@
+/* ====================================================== */
+/* GENERAL */
+/* ====================================================== */
+
+body {
+  background-color: honeydew;
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+section {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+h1 {
+  color: darkslategray;
+}
+
+h2 {
+  color: rgb(3, 86, 86);
+}
+
+/* ====================================================== */
+/* 1. ELEMENT VS CLASS */
+/* ====================================================== */
+
+/* Element selector */
+
+p {
+  color: red;
+}
+
+/* Class selector */
+
+.class-example {
+  color: blue;
+}
+
+/*
+RESULT:
+
+.blue wins over p
+
+Class > Element
+*/
+
+/* ====================================================== */
+/* 2. CLASS VS ID */
+/* ====================================================== */
+
+.class-example {
+  color: blue;
+}
+
+#id-example {
+  color: green;
+}
+
+/*
+RESULT:
+
+#id-example wins
+
+ID > Class
+*/
+
+/* ====================================================== */
+/* 3. TWO CLASSES */
+/* ====================================================== */
+
+.text {
+  color: purple;
+}
+
+.special {
+  color: orange;
+}
+
+/*
+Both have the same specificity.
+
+.special comes later,
+so orange wins.
+*/
+
+/* ====================================================== */
+/* 4. MORE SPECIFIC SELECTOR */
+/* ====================================================== */
+
+.text {
+  color: purple;
+}
+
+.card .text {
+  color: brown;
+}
+
+/*
+.card .text has TWO classes.
+
+Therefore:
+
+.card .text > .text
+
+Result: brown
+*/
+
+/* ====================================================== */
+/* 5. INLINE STYLE */
+/* ====================================================== */
+
+#inline-example {
+  color: red;
+}
+
+/*
+The HTML contains:
+
+style="color: orange;"
+
+The inline style wins over
+the normal #inline-example rule.
+
+Result: orange
+*/
+
+/* ====================================================== */
+/* 6. !IMPORTANT */
+/* ====================================================== */
+
+#important-example {
+  color: blue;
+}
+
+#important-example {
+  color: red !important;
+}
+
+/*
+!important wins over the normal rule.
+
+Result: red
+*/
+
+/* ====================================================== */
+/* 7. FINAL SPECIFICITY CHALLENGE */
+/* ====================================================== */
+
+p {
+  color: red;
+}
+
+.text {
+  color: blue;
+}
+
+.container .text {
+  color: green;
+}
+
+#main .text {
+  color: purple;
+}
+
+/*
+The HTML has:
+
+<div id="main" class="container">
+  <p class="text special">
+</div>
+
+Compare:
+
+p
+↓
+.text
+↓
+.container .text
+↓
+#main .text
+
+#main .text wins.
+
+Result: purple
+*/
