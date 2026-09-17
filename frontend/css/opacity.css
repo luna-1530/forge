@@ -1,0 +1,112 @@
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+div {
+  padding: 30px;
+  margin: 15px 0;
+  text-align: center;
+  background-color: purple;
+  color: white;
+}
+
+/* =====================================================
+   1. DIFFERENT OPACITY VALUES
+   ===================================================== */
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+/* =====================================================
+   2. OPACITY AFFECTS EVERYTHING
+   ===================================================== */
+
+.whole-opacity {
+  border: 5px solid black;
+  opacity: 0.5;
+}
+
+/* =====================================================
+   3. OPACITY VS RGBA
+   ===================================================== */
+
+.opacity-box {
+  background-color: purple;
+  color: white;
+  opacity: 0.5;
+}
+
+.rgba-box {
+  background-color: rgba(128, 0, 128, 0.5);
+  color: black;
+}
+
+/* =====================================================
+   4. HOVER OPACITY
+   ===================================================== */
+
+.hover-button {
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+
+  opacity: 1;
+}
+
+.hover-button:hover {
+  opacity: 0.5;
+}
+
+/* =====================================================
+   5. INVISIBLE ELEMENT
+   ===================================================== */
+
+.invisible {
+  opacity: 0;
+}
+
+/* =====================================================
+   🎯 CHALLENGE
+   ===================================================== */
+
+.challenge {
+  opacity: 1;
+
+  /* Try changing this! */
+}
